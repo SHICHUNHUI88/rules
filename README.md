@@ -62,12 +62,12 @@ QX/
 
 **geosite 域名样板**
 ```
-https://cdn.jsdelivr.net/gh/SHICHUNHUI88/rules@main/geo/geosite/cn.list
+https://gh.669588.xyz/rules/geo/geosite/cn.list
 ```
 
 **geoip 样板**
 ```
-https://cdn.jsdelivr.net/gh/SHICHUNHUI88/rules@main/geo/geoip/cn.list
+https://gh.669588.xyz/rules/geo/geoip/cn.list
 ```
 
 ---
@@ -85,12 +85,12 @@ https://cdn.jsdelivr.net/gh/SHICHUNHUI88/rules@main/geo/geoip/cn.list
 
 ### [GEOSITE 数据库](https://github.com/SHICHUNHUI88/rules/tree/main/geo/geosite)
 ```
-https://cdn.jsdelivr.net/gh/SHICHUNHUI88/rules@main/geo/geosite
+https://gh.669588.xyz/rules/geo/geosite
 ```
 
 ### [GEOIP 数据库](https://github.com/SHICHUNHUI88/rules/tree/main/geo/geoip)
 ```
-https://cdn.jsdelivr.net/gh/SHICHUNHUI88/rules@main/geo/geoip
+https://gh.669588.xyz/rules/geo/geoip
 ```
 
 > 说明：这是"目录链接"，Clash Mi 会按需下载其中的 `.mrs` 小文件，例如：
@@ -113,20 +113,20 @@ QuantumultX 使用 `filter_remote` 引用远程规则，需使用 `QX/` 目录�
 
 ### geosite 域名样板 [目录](https://github.com/SHICHUNHUI88/rules/tree/main/QX/geosite)
 ```
-https://cdn.jsdelivr.net/gh/SHICHUNHUI88/rules@main/QX/geosite/cn.list
+https://gh.669588.xyz/rules/QX/geosite/cn.list
 ```
 
 ### geoip 样板 [目录](https://github.com/SHICHUNHUI88/rules/tree/main/QX/geoip)
 ```
-https://cdn.jsdelivr.net/gh/SHICHUNHUI88/rules@main/QX/geoip/cn.list
+https://gh.669588.xyz/rules/QX/geoip/cn.list
 ```
 
 ### 在 filter_remote 中引用
 
 ```ini
 [filter_remote]
-https://cdn.jsdelivr.net/gh/SHICHUNHUI88/rules@main/QX/geosite/cn.list, tag=CN, force-policy=direct, update-interval=86400, opt-parser=false, enabled=true
-https://cdn.jsdelivr.net/gh/SHICHUNHUI88/rules@main/QX/geoip/cn.list, tag=CN-IP, force-policy=direct, update-interval=86400, opt-parser=false, enabled=true
+https://gh.669588.xyz/rules/QX/geosite/cn.list, tag=CN, force-policy=direct, update-interval=86400, opt-parser=false, enabled=true
+https://gh.669588.xyz/rules/QX/geoip/cn.list, tag=CN-IP, force-policy=direct, update-interval=86400, opt-parser=false, enabled=true
 ```
 
 > 说明：文件内不含策略名，必须通过 `force-policy` 指定走哪个策略组，否则 QX 解析失败。将 `direct` 替换为你实际的策略组名称即可。
@@ -140,6 +140,3 @@ https://cdn.jsdelivr.net/gh/SHICHUNHUI88/rules@main/QX/geoip/cn.list, tag=CN-IP,
 | 域名关键字 | `HOST-KEYWORD, openai` |
 | IPv4 | `IP-CIDR, 1.1.1.1/32` |
 | IPv6 | `IP-CIDR6, 2606::/32` |
-
----
-
