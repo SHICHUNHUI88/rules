@@ -176,6 +176,13 @@ https://gh.669588.xyz/rules/geo/geoip
 
 ---
 
+## [小火箭(Shadowrocket)懒人配置](https://gh.669588.xyz/gist/b0400d50f3fd5a63d77757ec0413d824/raw/Shadowrocket.conf)
+```
+https://gh.669588.xyz/gist/b0400d50f3fd5a63d77757ec0413d824/raw/Shadowrocket.conf
+```
+
+---
+
 ## 使用方法（QuantumultX）
 
 QuantumultX 使用 `filter_remote` 引用远程规则，需使用 `QX/` 目录下的专用文件，该目录使用 QX 原生的 `HOST` 系格式。
