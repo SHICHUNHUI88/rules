@@ -29,7 +29,7 @@ export default {
     let target = "";
 
     if (path.startsWith("/rules/")) {
-      target = "https://raw.githubusercontent.com/SHICHUNHUI88/rules/main" + path.replace("/rules", "");
+      target = "https://raw.githubusercontent.com/bgpeer/rules/main" + path.replace("/rules", "");
     } else {
       return new Response("404", { status: 404 });
     }
